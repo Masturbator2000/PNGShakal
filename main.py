@@ -80,7 +80,7 @@ except Exception as e:
     e_modl = sub('cannot import name .* from ', '', e_modl)
     e_modl = sub('\(.*\)', '', e_modl)
     e_modl = e_modl.replace(' ', '')
-    if e_modl == 'PIL':
+    if e_modl == 'pil':
         e_modl = 'Pillow'
     log(f'Module {e_modl} not found', 'FATAL')
     print(f'ОШИБКА: Модуль {e_modl} не найден. Хотите установить его?')
